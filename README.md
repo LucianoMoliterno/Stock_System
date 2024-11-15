@@ -68,8 +68,8 @@ Cada integrante del equipo creará ramas separadas para desarrollar las funciona
 
 
 ## Integrantes:
-- [Luciano Moliterno. (https://github.com/LucianoMoliterno))
-- [Braian Otondo. (https://github.com/BraianOtondo)
+- [Luciano Moliterno.[FrontEnd + BD + Inventario y Productos]] (https://github.com/LucianoMoliterno))
+- [Braian Otondo.[BackEnd + Configuracion + Stock]](https://github.com/BraianOtondo)
 
 ## Diagrama de Clases
 <img src="stock_system_ERD.png"  title="Diagrama de Clases UML">
