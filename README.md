@@ -68,13 +68,8 @@ Cada integrante del equipo creará ramas separadas para desarrollar las funciona
 
 
 ## Integrantes:
-- [Newman Barbara. [Parking]](https://github.com/BarbaraNewman)
-- [Ramos Nayla María. [Alumbrado]](https://github.com/naylamarie)
-- [Robles Flores Sergio. [Recolectores]](https://github.com/ImNotThrasher)
-- [Spinazzola Luciano Nicolas. [Sanitarios]](https://github.com/LucianoSpinazzola)
-
-### Videos de demostración  :
-- [Presentacion de Barbara Newman y Sergio Robles. ](https://youtu.be/asVmbaAXafE)
+- [Luciano Moliterno. (https://github.com/LucianoMoliterno))
+- [Braian Otondo. (https://github.com/BraianOtondo)
 
 ## Diagrama de Clases
 <img src="Diagrama de Clases - Grupo 17.png"  title="Diagrama de Clases UML">
