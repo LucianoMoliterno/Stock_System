@@ -72,7 +72,7 @@ Cada integrante del equipo creará ramas separadas para desarrollar las funciona
 - [Braian Otondo. (https://github.com/BraianOtondo)
 
 ## Diagrama de Clases
-<img src="Diagrama de Clases - Grupo 17.png"  title="Diagrama de Clases UML">
+<img src="stock_system_ERD.png"  title="Diagrama de Clases UML">
 
 ---
 
