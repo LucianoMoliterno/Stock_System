@@ -1,122 +1,120 @@
 # Stock System
 
 <div align="center">
-<h1> Sistema de Stock orientado a una tienda de electronica</h1>
+<h1>Smart Stock System for an Electronics Store</h1>
 </div>
-"Antes que nada, ¿tienes claro qué significa un sistema de stock inteligente? Un sistema de stock se vuelve inteligente cuando utiliza dispositivos IoT, como sensores, para monitorear inventarios en tiempo real y ejecutar acciones automáticas para optimizar la gestión. Estas acciones no solo mejoran la eficiencia operativa, como la optimización de rutas de distribución y la predicción de demanda, sino que también tienen un impacto positivo en la optimización de recursos y la reducción de costos, mejorando así la calidad del servicio y la satisfacción del cliente."
+"First of all, do you understand what a smart stock system means? A stock system becomes intelligent when it uses IoT devices, such as sensors, to monitor inventory in real time and execute automated actions to optimize management. These actions not only improve operational efficiency—such as optimizing distribution routes and predicting demand—but also positively impact resource optimization and cost reduction, thereby enhancing service quality and customer satisfaction."
 (https://www.mygestion.com/blog/tipos-de-stock)
 
-### Se espera que el TP cuente con los siguientes puntos:
-#### Registro inicial: 
+### The project is expected to include the following points:
+#### Initial Registration:
 
-El proceso comienza con el registro inicial de todos los productos que la empresa
-tiene en su inventario. 
+The process begins with the initial registration of all products that the company has in its inventory.
 
-#### Entrada de productos: 
+#### Product Entry:
 
-Cada vez que llega un nuevo lote de productos al almacén o lugar de
-almacenamiento, se registra en el sistema.
+Each time a new batch of products arrives at the warehouse or storage location, it is recorded in the system.
 
-#### Salida de productos en stock: 
+#### Product Stock Exit:
 
-Cuando se vende un producto, se registra la salida en el sistema.
+When a product is sold, the exit is recorded in the system.
 
-#### Control de niveles de stock: 
+#### Stock Level Monitoring:
 
-El sistema monitorea constantemente los niveles de stock de cada
-producto. 
+The system continuously monitors the stock levels of each product.
 
-#### Reabastecimiento:
+#### Replenishment:
 
-Cuando se activa una alerta de nivel bajo de stock, se inicia el proceso de
-reabastecimiento. 
+When a low stock alert is triggered, the replenishment process is initiated.
 
-#### Seguimiento y análisis: 
+#### Tracking and Analysis:
 
-Además de controlar los niveles de stock, el sistema puede proporcionar
-informes y análisis detallados sobre el rendimiento del inventario. 
+In addition to monitoring stock levels, the system can provide detailed reports and analysis on inventory performance.
 
-### Se espera que en la plataforma como mínimo pueda:
-1. Usuario Administrador
+### The platform is expected to allow users to perform the following tasks at a minimum:
+1. **Admin User**
    
-    a. Alta, baja y modificación de productos de la organización.
+    a. Add, remove, and modify organization products.
    
-    b. Alta de nuevo lote de stock de un producto de la organización.
+    b. Add a new stock batch for an organization product.
    
-    c. Vista de informes de estado de productos en relación a su stock.
+    c. View reports on product status in relation to their stock.
    
-    d. Alta de pedido de aprovisionamiento de stock de un producto.
+    d. Create a restocking order for a product.
    
-3. Usuario Cliente:
+2. **Customer User**
    
-    a. Generar una nueva compra de productos, lo cual genera una baja en el stock (si corresponde).
+    a. Generate a new product purchase, which results in a decrease in stock (if applicable).
    
-5. Usuarios en general:
+3. **General Users**
    
     a. Login.
    
     b. Logout.
+
 ---
-## Estructura de ramas
+## Branch Structure
 - **main:**
-Rama principal del proyecto y representa la versión estable del código.
+Main branch of the project, representing the stable version of the code.
 
 - **development:**
-Rama intermedia donde se integran los cambios de las diferentes funcionalidades desarrolladas por el equipo. Sirve como un entorno de prueba en conjunto antes de llevar los cambios a la rama **main**.
+Intermediate branch where changes from different features developed by the team are integrated. It serves as a testing environment before merging changes into the **main** branch.
 
-Cada integrante del equipo creará ramas separadas para desarrollar las funcionalidades asignadas. Estas ramas se basarán en la rama **development** y se fusionarán con ella una vez que las funcionalidades estén completas y probadas.
+Each team member will create separate branches to develop assigned features. These branches will be based on the **development** branch and merged into it once the features are complete and tested.
 
+## Team Members:
+- [Luciano Moliterno [FrontEnd + DB + Inventory and Products]](https://github.com/LucianoMoliterno)
+- [Braian Otondo [BackEnd + Configuration + Stock]](https://github.com/BraianOtondo)
 
-## Integrantes:
-- [Luciano Moliterno.[FrontEnd + BD + Inventario y Productos]] (https://github.com/LucianoMoliterno))
-- [Braian Otondo.[BackEnd + Configuracion + Stock]](https://github.com/BraianOtondo)
-
-## Diagrama de Clases
-<img src="stock_system_ERD.png"  title="Diagrama de Clases UML">
+## Class Diagram
+<img src="stock_system_ERD.png" title="UML Class Diagram">
 
 ---
 
-## Tecnologías:
+## Technologies:
 [![Maven](https://skillicons.dev/icons?i=maven)](https://maven.apache.org/)
 [![Java](https://skillicons.dev/icons?i=java)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 [![Spring](https://skillicons.dev/icons?i=spring)](https://spring.io/projects/spring-boot)
 [![Hibernate](https://skillicons.dev/icons?i=hibernate)](https://hibernate.org/)
 [![MySQL](https://skillicons.dev/icons?i=mysql)](https://www.mysql.com/)
 
-## Instalación y configuración del proyecto
-- Verificar Dependencias
-- Crear Base de Datos
-- Configurar Variables de Entorno
-- Compilar  proyecto
-- Cargar datos de prueba
-- Ejecutar servidor
+## Installation and Project Configuration
+- Verify Dependencies
+- Create Database
+- Configure Environment Variables
+- Compile the Project
+- Load Test Data
+- Run the Server
 
-## Instrucciones
+## Instructions
 
-Debe verificarse que se tenga instalado Java JDK 17 y compilar el proyecto previo a correr el servidor.
+Ensure that Java JDK 17 is installed and compile the project before running the server.
 
-### Verificación de la versión de Java:
+### Check Java Version:
 `java -version`
 
+### Create the Database:
+Run the script `\create-schema.sql`  
+Run the script `\insert-ALL-data.sql` after compilation; this includes test data.
 
-### Creacion de la base de datos:
-Ejecutar el script `\create-schema.sql`  
-Ejecutar el script `\insert-ALL-data.sql` despues de la compilación, esto incluye datos de prueba.
+Username and Password: `admin` `admin`  
+Username and Password: `auditor` `auditor`
 
-Usuario y Contraseña; `admin` `admin`  
-Usuario y Contraseña; `auditor` `auditor`
+### Configure Environment Variables:
+In `\src\main\resources\application.yml`  
+Modify the properties `url:`, `username:`, and `password:`
 
-### Configuracion de variables de entorno:
-En `\src\main\resources\application.yml`  
-Modificar las propiedades `url:` `username:` y `password:`
+### Compile the Project with Maven:
+Deleting old files: `mvn clean install`  
+Only compilation: `mvn install`
 
-
-### Compilación del proyecto con Maven:
-Eliminando archivos antiguos: `mvn clean install`  
-Solo compilación: `mvn install`
-
-### Ejecución del servidor Spring Boot:
+### Run the Spring Boot Server:
 `mvn spring-boot:run`
 
-### Detener ejecución del servidor Spring Boot:
-Presionar las teclas `Ctrl + c`
+### Stop the Spring Boot Server:
+Press `Ctrl + c`
+
+---
+
+Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
+*Tools/logos are property of their respective companies.*
